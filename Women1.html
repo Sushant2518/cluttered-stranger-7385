@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP WOMAN</title>
+    <style>
+             /* FIXED SECTION FOR ALL OTHER PAGES */
+             #top{
+            text-align: center;
+            display: block;
+            color: rgb(51, 51, 51);
+            font-size: 14px;
+            padding: 3px 12px;
+            text-decoration: none;
+            /* margin: auto; */
+        }
+        .nav1{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            justify-content: space-between;
+            color: white;
+            background-color: rgb(51, 51, 51);
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        #nav1-img-p{
+            display: flex;
+        }
+        #nav1-img-p img{
+            display: block;
+            margin-top: 10px;
+        }
+        #anch{
+            width: 20%;
+            height: 20px;
+            margin-top: 15px;
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-around;
+        }
+        .nav1 >div a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav2{
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+
+        }
+        #search-row{
+            /* width: 30%; */
+            padding: 20px 20px;
+            /* border: 1px solid green; */
+        }
+        #search-row input{
+            background: 0px;
+            outline: 0px;
+            border: 0px;
+            border-bottom: 1px solid rgb(133, 133, 133);
+            padding-bottom: 8px;
+            padding-left: 25px;
+            font-size: 18px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: 0.2px;
+            color: rgb(0, 0, 0);
+        }
+        #search-row button{
+            background: transparent;
+            border: none;
+            outline: 0px;
+        }
+        #search-row button .fa-solid{
+            width: 20px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+        .nav2{
+            display: flex;
+        
+        }
+        #logo{
+            margin-left: 160px;
+        }
+        #bag{
+            /* border: 1px solid red; */
+            margin-left: 450px;
+            /* width: 100px; */
+            font-size: 40px;
+            padding-top: 10px;
+            line-height: 0%;
+        }
+       #nav3{
+        width: 100%;
+        /* border: 1px solid red; */
+       }
+       #navigation{
+        /* border: 1px solid green; */
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        /* text-decoration: none; */
+        padding-bottom: 15px;
+       }
+       #navigation  a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        color: rgb(51, 51, 51);
+        
+       }
+       /* END HERE */
+       
+       .background{
+        width: 100%;
+       
+       }
+       /* filter_sort */
+       .filter_sort{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+       }
+       .filter_sort >div #filter{
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+       }
+       .filter_sort >div #sort{
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+       }
+       #container{
+        box-sizing: border-box;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 20px 20px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       }
+       #container >div{
+        width: 80%;
+        /* border: 1px solid red; */
+        padding: 10px;
+        margin: auto;
+       }
+       #container >div img{
+        width: 100%;
+       }
+       #container >div p{
+        font-size: 20px;
+        color: rgb(51, 51, 51);
+       }
+       #container >div:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       .learn-more{
+        font-size: 20px;
+        margin-bottom: 20px;
+       }
+       .learn-more > a{
+        color: black;
+        margin: auto;
+        display: block;
+        text-align: center;
+       }
+       .con-h1{
+        width: 100%;
+        /* border: 1px solid red; */
+       }
+       .con-h1 h1{
+        text-align: center;
+       }
+       .con-data{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-bottom: 30px;
+       }
+       .con-data > div{
+        width: 20%;
+        margin-left: 10px;
+        /* border: 1px solid green; */
+        padding: 10px;
+        /* margin: auto; */
+       }
+       .con-data img{
+        width: 100%;
+       }
+       .con-data p{
+        font-size: 20px;
+        color: rgb(51, 51, 51);
+       }
+       .con-data > div:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+          /* fiexed section of all other pages */
+          footer{
+        background-color: #d8d8d8;
+        width: 100%;
+       }
+       .con{
+        display: flex;
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+        justify-content: space-between;
+       }
+       .con1{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid red; */
+        /* padding: 30px; */
+       }
+       .con1 .fa-solid{
+        padding: 30px;
+        font-size: 45px;
+        /* border: 1px solid green; */
+       }
+       .con2{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid green; */
+       }
+       .con2 > div img{
+        width: 48px;
+        height: 48px;
+        padding: 30px;
+       }
+       .con3{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid red; */
+       }
+       .con3 .fa-solid {
+        padding: 30px;
+        font-size: 60px;
+        /* border: 1px solid green; */
+       }
+       .line{
+        width: 90%;
+        margin: auto;
+       }
+       /* END HERE  */
+       .last-mid{
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+        display: flex;
+       }
+       .last-mid1 {
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid1 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid2{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid2 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid3{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid3 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid4{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid4 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid5{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid5 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid6{
+        width: 25%;
+        /* border: 1px solid green; */
+        padding-left: 10px;
+       }
+       .last-mid6 >div p{
+        /* text-decoration: none;
+        display: block;
+        margin-bottom: 10px; */
+        color: black;
+       }
+       .last-mid6 >div button{
+        width: 154px;
+        height: 40px;
+        padding: 4px 8px;
+        border: 1px solid rgb(51, 51, 51);
+        background-color: rgb(51, 51, 51);
+        color: white;
+       }
+       .last-mid6 >div button:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+       }
+       .last{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+       }
+       /* END HERE  */
+    </style>
+     <script src="https://kit.fontawesome.com/0ef0ee972c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- FIXED SECTION FOR ALL OTHER PAGES  -->
+    <a href="#" id="top">Enable Accessibility</a>
+    <div class="nav1">
+        <div id="nav1-img-p">
+            <img src="https://www.eddiebauer.com/static/ar-logo/ar-logo-small.png" alt="Error" width="30px" height="30px">
+            <p>Earn Rewards On Purchases</p>
+        </div>
+        <div>
+            <p>LIMITED TIME! 40% OFF - PRESIDENTS' DAY SALE <span>VIEW ALL OFFERS > </span></p>
+        </div>
+        <div id="anch">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#">Stores&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+            <i class="fa-solid fa-user"></i>
+            
+            <a href="sign In.html" >Sign In / Sign Up</a>
+        </div>
+    </div>
+    <div class="nav2">
+        <div id="search-box">
+            <div id="search-row">
+                <input type="search" value="" placeholder="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div id="logo">
+            <img  src="./logo1.png" alt="Error" width="350px" >
+        </div>
+        <div id="bag">
+            <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+            <p style="font-size: 20px;">Bag</p>
+        </div>
+    </div>
+    <div id="nav3">
+        <div id="navigation">
+            <div>
+                <a href="">NEW!</a>
+            </div>
+            <div>
+                <a href="">WOMEN</a>
+            </div>
+            <div>
+                <a href="">MEN</a>
+            </div>
+            <div>
+                <a href="">KIDS</a>
+            </div>
+            <div>
+                <a href="">OUTERWEAR</a>
+            </div>
+            <div>
+                <a href="">GEAR</a>
+            </div>
+            <div>
+                <a href="">FOOTWEAR</a>
+            </div>
+            <div>
+                <a href="">HOME</a>
+            </div>
+            <div>
+                <a href="">40% OFF SALE</a>
+            </div>
+            <div>
+                <a href="">CLEARANCE</a>
+            </div>
+            <div>
+                <a href="">RESALE</a>
+            </div>
+            <div>
+                <a href="">GUIDEPOST</a>
+            </div>
+        </div>
+    </div>
+    <!-- END HERE  -->
+    <div class="background">
+        <img style="width: 100%;" src="./woman page background.jpg" alt="error">
+    </div>
+    <!-- filter section and sort section  -->
+    <div class="filter_sort">
+        <div>
+            <select id="filter">
+                <option value="">REFINE</option>
+                
+            </select>
+        </div>
+        <div>
+            <label for="">SORT BY :</label>
+            <select id="sort">
+                <option value="">Best Match</option>
+                <option value="lth">Price Low to High</option>
+                <option value="htl">Price High to Low</option>
+                <option value="">Customer Rating</option>
+                <option value="">Newest</option>
+            </select>
+        </div>
+    </div>
+    <!-- appened data here -->
+    <div id="container"></div>
+    
+    <div class="learn-more"><a href="#">LEARN MORE ></a></div>
+    
+    <div class="con-h1"><h1>Recommended For You</h1></div>
+    
+        <!-- <div><h1>Recommended For You</h1></div> -->
+        <div class="con-data">
+            <div>
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0093497_204C1?$328V1$" alt="error">
+                <h3>Women's EB Hemplify Short-Sleeve T-Shirt</h3>
+                <p>$45</p>
+            </div>
+            <div>
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0093719_722C1?$328V1$" alt="error">
+                <h3>Women's Mountain Town Long-Sleeve Square Neck Textured T-Shirt</h3>
+                <p>$150</p>
+            </div>
+            <div>
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0093860_315C1?$328V1$" alt="error">
+                <h3>Women's EB Hemplify Short-Sleeve T-Shirt</h3>
+                <p>$250</p>
+            </div>
+            <div>
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0314018_742C1?$328V1$" alt="error">
+                <h3>Women's Mountain Town Long-Sleeve Square Neck Textured T-Shirt</h3>
+                <p>$200</p>
+            </div>
+            <div>
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0313424_574C1?$328V1$" alt="error">
+                <h3>Women's EB Hemplify Short-Sleeve T-Shirt</h3>
+                <p>$57</p>
+            </div>
+        </div>    
+
+        <!-- fiexed section of all other pages -->
+        <footer>
+            <div>
+                <div class="con">
+                    <div class="con1">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>STORE LOCATOR</h4>
+                            </div>
+                            <div>
+                                <p>Find one of over 250 Eddie Bauer <br> stores in North America.</p>
+                            </div>
+                        </div>    
+                    </div> 
+                    <div class="con2">
+                        <div>
+                            <img src="https://www.eddiebauer.com/static/ar-logo/ar-logo-small.png" alt="error">
+                        </div>
+                        <div>
+                            <div>
+                                <h4>ADVENTURE REWARDS</h4>
+                            </div>
+                            <div>
+                                <p>Earn points on every purchase. Sign up <br> today for 500 points towards your first <br> reward!</p>
+                            </div>
+                        </div>  
+                    </div>   
+                    <div class="con3">
+                        <div>
+                            <i class="fa-solid fa-bullseye-arrow"></i>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>VISION STATEMENT</h4>
+                            </div>
+                            <div>
+                                <p>To inspire, enable, and empower <br> everyone to experience the outdoors <br> and live </p>
+                            </div>
+                        </div>  
+                    </div> 
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="last-mid">
+                    <div class="last-mid1">
+                        <h4>HELP</h4>
+                        <div>
+                            <a href="#">Customer Service</a>
+                        </div>
+                        <div>
+                            <a href="#">Track Your Order</a>
+                        </div>
+                        <div>
+                            <a href="#">Return Policy</a>
+                        </div>
+                        <div>
+                            <a href="#">Start A Return</a>
+                        </div>
+                        <div>
+                            <a href="#">Shipping</a>
+                        </div>
+                        <div>
+                            <a href="#">Payment Options</a>
+                        </div>
+                        <div>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="last-mid2">
+                        <h4>SHOPPING</h4>
+                        <div>
+                            <a href="#">Sign In / Register</a>
+                        </div>
+                        <div>
+                            <a href="#">Adventure Rewards</a>
+                        </div>
+                        <div>
+                            <a href="#">Buy Gift Cards</a>
+                        </div>
+                        <div>
+                            <a href="#">Promos And Coupons</a>
+                        </div>
+                        <div>
+                            <a href="#">Find Your Fit</a>
+                        </div>
+                        <div>
+                            <a href="#">Price Match Policy</a>
+                        </div>
+                    </div>
+                    <div class="last-mid3">
+                       <div>
+                            <h4>EB CREDIT CARD</h4>
+                            <div>
+                                <a href="#">Apply Now</a>
+                            </div>
+                            <div>
+                                <a href="#">Pay My Bill</a>
+                            </div>
+                       </div>
+                       <div>
+                            <h4>VISIT A STORE</h4>
+                            <div>
+                                <a href="#">Store Locator</a>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="last-mid4">
+                        <h4>(RE)ADVENTURE</h4>
+                        <div>
+                            <a href="#">About</a>
+                        </div>
+                        <div>
+                            <a href="#">Resale</a>
+                        </div>
+                    </div>
+                    <div class="last-mid5">
+                        <h4>ABOUT US</h4>
+                        <div>
+                            <a href="#">Our Story</a>
+                        </div>
+                        <div>
+                            <a href="#">Careers</a>
+                        </div>
+                        <div>
+                            <a href="#">Land Acknowledgement</a>
+                        </div>
+                        <div>
+                            <a href="#"><b>Privacy Policy</b></a>
+                        </div>
+                        <div>
+                            <a href="#"><b>CA Supply Chains Act</b></a>
+                        </div>
+                        <div>
+                            <a href="#"><b>Do Not Sell & CCPA</b></a>
+                        </div>
+                        <div>
+                            <a href="#">Do Not Contact Me</a>
+                        </div>
+                        <div>
+                            <a href="#">Accessibility Statement</a>
+                        </div>
+                    </div>
+                    <div class="last-mid6">
+                        <h4>BE THE FIRST TO KNOW</h4>
+                        <p>Earn rewards and be the first to hear about sales and special offers.</p>
+                        <div>
+                            <button>SIGN UP</button>
+                        </div>
+                        <div style="font-size: 25px; padding-top: 20px;">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="last">
+                    <div>
+                        <img src="./logo1.png" alt="Error" width="100px" height="50px">
+                    </div>
+                    <div>
+                        <p>Session ID #178 560 900</p>
+                        <p>© 2023 Eddie Bauer LLC. All Rights Reserved</p>
+                    </div>
+                    <div>
+                        <p>Terms of Use | Sitemap</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
+<script>let  womensData = [
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "35.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$",
+    tilte: "Women's Favorite Short-Sleeve Crewneck T-Shirt",
+    price: "70.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0097327_443C1?$328V1$",
+    tilte: "Women's Favorite Short-Sleeve V-Neck T-Shirt",
+    price: "18.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311879_296C1?$328V1$",
+    tilte: "Women's Departure 2.0 Long-Sleeve Shirt",
+    price: "35.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0095638_862C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
+    price: "25.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092131_636C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
+    price: "35.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0312770_659C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "35.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311874_819C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "48.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0160229_989C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "35.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311805_903C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
+    price: "28.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0081012_990C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "35.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0380373_019C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
+    price: "80.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093059_568C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "80.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0331703_182C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
+    price: "80.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0080235_572C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "50.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0331604_722C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "60.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092680_987C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "65.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092681_965C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "55.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0314075_344C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "25.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093069_379C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "30.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093069_379C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "40.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092636_833C1?$328V1$",
+    tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
+    price: "120.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0313426_225C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "100.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0100972_862C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "45.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311281_870C1?$328V1$",
+    tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
+    price: "45.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0081102_588C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "150.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0170153_862C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "85.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0313657_379C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "55.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0313725_707C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "38.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0312262_923C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "38.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0380418_840C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "48.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093735_339C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "48.00",
+    },
+    {
+    image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0314763_712C1?$328V1$",
+    tilte: "Women's Cozy Camp Sweatshirt Dress",
+    price: "48.00",
+    },
+];
+
+    window.addEventListener('load', function(){
+        displayData(womensData)
+    })
+
+    document.getElementById("sort").addEventListener('change', sortPrice); 
+    function sortPrice(){
+      var selected = document.getElementById('sort').value;
+      if(selected == 'lth'){
+        womensData.sort(function(a, b){
+          return a.price-b.price;
+        })
+        displayData(womensData); 
+      }
+      else{
+        womensData.sort(function(a, b){
+          return b.price - a.price;
+        })
+        displayData(womensData)
+      }
+    }
+    
+    let productData = JSON.parse(localStorage.getItem("product"))||[];
+    
+    displayData(womensData);
+    function displayData(data){
+        let containerData = document.querySelector("#container");
+        containerData.innerHTML="";
+
+        data.forEach(function(element){
+            let divData = document.createElement("div");
+
+            let imgData = document.createElement("img");
+            imgData.setAttribute("src",element.image_url);
+
+            let tilteData = document.createElement("h3");
+            tilteData.innerText=element.tilte;
+
+            let priceData = document.createElement("p")
+            priceData.innerText=`$${element.price}`;
+
+            divData.append(imgData,tilteData,priceData);
+            containerData.append(divData)
+
+
+            divData.addEventListener("click",function(){
+                productData.push({...element});
+                localStorage.setItem("product",JSON.stringify(productData));
+            })
+        })
+    }
+
+
+
+</script>
