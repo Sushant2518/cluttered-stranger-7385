@@ -373,15 +373,17 @@
     <div class="nav2">
         <div id="search-box">
             <div id="search-row">
-                <input type="search" value="" placeholder="Search">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form>
+                    <input type="search" value="" placeholder="Search">
+                    <button id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
         </div>
         <div id="logo">
             <img  src="./logo1.png" alt="Error" width="350px" >
         </div>
         <div id="bag">
-            <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+            <i class="fa-sharp fa-solid fa-bag-shopping" onclick="window.location.href='cart.html'"></i>
             <p style="font-size: 20px;">Bag</p>
         </div>
     </div>
@@ -434,7 +436,11 @@
         <div>
             <select id="filter">
                 <option value="">REFINE</option>
-                
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="X">X</option>
+                <option value="XXL">XXL</option>
             </select>
         </div>
         <div>
@@ -669,166 +675,232 @@
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "35.00",
+    id : 1,
+    size : "X",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$",
     tilte: "Women's Favorite Short-Sleeve Crewneck T-Shirt",
     price: "70.00",
+    id : 2,
+    size : "X",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0097327_443C1?$328V1$",
     tilte: "Women's Favorite Short-Sleeve V-Neck T-Shirt",
     price: "18.00",
+    id : 3,
+    size : "X",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311879_296C1?$328V1$",
     tilte: "Women's Departure 2.0 Long-Sleeve Shirt",
     price: "35.00",
+    id : 4,
+    size : "X",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0095638_862C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
     price: "25.00",
+    id : 5,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092131_636C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
     price: "35.00",
+    id : 6,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0312770_659C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "35.00",
+    id : 7,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311874_819C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "48.00",
+    id : 8,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0160229_989C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "35.00",
+    id : 9,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311805_903C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
     price: "28.00",
+    id : 10,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0081012_990C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "35.00",
+    id : 11,
+    size : "S",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0380373_019C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
     price: "80.00",
+    id : 12,
+    size : "S",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093059_568C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "80.00",
+    id : 13,
+    size : "S",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0331703_182C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve V-Neck T-Shirt",
     price: "80.00",
+    id : 14,
+    size : "S",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0080235_572C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "50.00",
+    id : 15,
+    size : "S",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0331604_722C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "60.00",
+    id : 16,
+    size : "S",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092680_987C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "65.00",
+    id : 17,
+    size : "XL",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092681_965C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "55.00",
+    id : 18,
+    size : "XL",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0314075_344C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "25.00",
+    id : 19,
+    size : "XL",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093069_379C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "30.00",
+    id : 20,
+    size : "XL",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093069_379C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "40.00",
+    id : 21,
+    size : "XL",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0092636_833C1?$328V1$",
     tilte: "Women's Favorite Long-Sleeve Crewneck T-Shirt",
     price: "120.00",
+    id : 22,
+    size : "XXL",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0313426_225C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "100.00",
+    id : 23,
+    size : "XXL"
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0100972_862C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "45.00",
+    id : 24,
+    size : "L",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0311281_870C1?$328V1$",
     tilte: "Women's High Route Grid Fleece Full-Zip Jacket",
     price: "45.00",
+    id : 25,
+    size : "L",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0081102_588C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "150.00",
+    id : 26,
+    size : "L",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0170153_862C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "85.00",
+    id : 27,
+    size : "L",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0313657_379C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "55.00",
+    id : 28,
+    size : "L",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0313725_707C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "38.00",
+    id : 29,
+    size : "L",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0312262_923C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "38.00",
+    id : 30,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0380418_840C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "48.00",
+    id : 31,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0093735_339C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "48.00",
+    id : 32,
+    size : "M",
     },
     {
     image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0314763_712C1?$328V1$",
     tilte: "Women's Cozy Camp Sweatshirt Dress",
     price: "48.00",
+    id : 33,
+    size : "M"
     },
 ];
 
@@ -853,6 +925,26 @@
       }
     }
     
+    let searchForm = document.getElementById("form");
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let searchParams = searchForm.search.value;
+
+      let filtered = womensData.filter((element) => {
+        if (
+          element.tilte.toUpperCase().includes(searchParams.toUpperCase()) ===
+          true
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+    //   console.log(filtered)
+      displayData(filtered);
+    });
+
+
     let productData = JSON.parse(localStorage.getItem("product"))||[];
     
     displayData(womensData);
@@ -862,7 +954,7 @@
 
         data.forEach(function(element){
             let divData = document.createElement("div");
-
+            
             let imgData = document.createElement("img");
             imgData.setAttribute("src",element.image_url);
 
@@ -871,18 +963,37 @@
 
             let priceData = document.createElement("p")
             priceData.innerText=`$${element.price}`;
+            
+            // let sizeData = document.createElement("p");
+            // sizeData.innerText=element.size;
 
             divData.append(imgData,tilteData,priceData);
             containerData.append(divData)
-
+            // divData.innerHTML ="productPage.html " + window.location.href;
 
             divData.addEventListener("click",function(){
                 productData.push({...element});
                 localStorage.setItem("product",JSON.stringify(productData));
+                window.location.assign("productPage.html")
             })
+            
         })
     }
+   
 
 
+    let SelectFilter = document.getElementById("filter");
+
+     SelectFilter.addEventListener("change",function(element){
+       if(SelectFilter.value===""){
+        displayData(womensData);
+       }
+       else{
+        let filtered = womensData.filter((element)=>{
+            return element.size===SelectFilter.value;
+        });
+        displayData(filtered);
+       }
+    })
 
 </script>

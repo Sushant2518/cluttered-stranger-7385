@@ -130,12 +130,17 @@
        }
        #product-container>div{
         width: 90%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         padding: 20px;
+        
+       }
+       #product-container>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
        }
        #product-container>div img{
         width: 100%;
-
+        
        }
        #product-container>div h3{
         font-size: 30px;
@@ -143,6 +148,183 @@
        #product-container>div p{
         font-size: 20px;
        }
+       #sizebtn{
+        /* border: 1px solid red; */
+        display: flex;
+        /* margin-right: 20px; */
+        /* margin: auto; */
+        justify-content: space-between;
+       }
+       #sizebtn button{
+        display: block;
+        font-size: 20px;
+        padding: 10px 30px;
+        background-color: transparent;
+        border: 1px solid black;
+       }
+       #addToCart{
+        font-size: 30px;
+        display: block;
+        margin-top: 50px;
+        width: 540px;
+        padding: 20px;
+        background-color: rgb(30, 30, 30);
+        color: white;
+       }
+       #BuyBtn{
+        display: block;
+        font-size: 30px;
+        margin-top: 50px;
+        width: 540px;
+        padding: 20px;
+        background-color: rgb(30, 30, 30);
+        color: white;
+       }
+       #addToCart:hover{
+        background-color: white;
+        color: black;
+       }
+       #BuyBtn:hover{
+        background-color: white;
+        color: black;
+       }
+
+
+          /* fiexed section of all other pages */
+          footer{
+        background-color: #d8d8d8;
+        width: 100%;
+       }
+       .con{
+        display: flex;
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+        justify-content: space-between;
+       }
+       .con1{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid red; */
+        /* padding: 30px; */
+       }
+       .con1 .fa-solid{
+        padding: 30px;
+        font-size: 45px;
+        /* border: 1px solid green; */
+       }
+       .con2{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid green; */
+       }
+       .con2 > div img{
+        width: 48px;
+        height: 48px;
+        padding: 30px;
+       }
+       .con3{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid red; */
+       }
+       .con3 .fa-solid {
+        padding: 30px;
+        font-size: 60px;
+        /* border: 1px solid green; */
+       }
+       .line{
+        width: 90%;
+        margin: auto;
+       }
+       /* END HERE  */
+       .last-mid{
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+        display: flex;
+       }
+       .last-mid1 {
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid1 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid2{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid2 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid3{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid3 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid4{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid4 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid5{
+        width: 15%;
+        /* border: 1px solid green; */
+       }
+       .last-mid5 >div a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        color: black;
+       }
+       .last-mid6{
+        width: 25%;
+        /* border: 1px solid green; */
+        padding-left: 10px;
+       }
+       .last-mid6 >div p{
+        /* text-decoration: none;
+        display: block;
+        margin-bottom: 10px; */
+        color: black;
+       }
+       .last-mid6 >div button{
+        width: 154px;
+        height: 40px;
+        padding: 4px 8px;
+        border: 1px solid rgb(51, 51, 51);
+        background-color: rgb(51, 51, 51);
+        color: white;
+       }
+       .last-mid6 >div button:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+       }
+       .last{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+       }
+       /* END HERE  */
     </style>
     <script src="https://kit.fontawesome.com/0ef0ee972c.js" crossorigin="anonymous"></script>
 </head>
@@ -176,7 +358,7 @@
              <img  src="./logo1.png" alt="Error" width="350px" >
          </div>
          <div id="bag">
-             <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+             <i class="fa-sharp fa-solid fa-bag-shopping" onclick="window.location.href='cart.html'"></i>
              <p style="font-size: 20px;">Bag</p>
          </div>
      </div>
@@ -226,7 +408,7 @@
 
 
          <!-- fiexed section of all other pages -->
-         <!-- <footer>
+         <footer>
             <div>
                 <div class="con">
                     <div class="con1">
@@ -402,12 +584,13 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 </body>
 </html>
 <script>
      let productData = JSON.parse(localStorage.getItem("product"))||[];
 
+     let cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
      displayData(productData)
      function displayData(data){
         let productContainer = document.getElementById("product-container");
@@ -426,10 +609,64 @@
             let priceData = document.createElement("p")
             priceData.innerText=`$${element.price}`;
 
+            let ratingData = document.createElement("p")
+            ratingData.innerText="Rating"+":"+"4.4"
+            
+            let labelData = document.createElement("p");
+            labelData.innerText="Size";
+
+            let sizeData = document.createElement("div");
+            sizeData.setAttribute("id","sizebtn");
+
+            let Ssize = document.createElement("button");
+            Ssize.innerText="S";
+
+            let Msize = document.createElement("button");
+            Msize.innerText="M";
+
+            let Xsize = document.createElement("button");
+            Xsize.innerText="X";
+
+            let XLsize = document.createElement("button");
+            XLsize.innerText="XL";
+
+            let XXLsize = document.createElement("button");
+            XXLsize.innerText="XXL";
+
+            let addToCart = document.createElement("button")
+            addToCart.setAttribute("id","addToCart");
+            addToCart.innerText="Add To Cart";
+            
+            addToCart.addEventListener("click",()=>{
+            if(checkDuplicate(element)){
+                alert("Product Already in Cart");
+            }
+            else{
+                cartarr.push({...element, quantity:1});
+                localStorage.setItem("BagListObj",JSON.stringify(cartarr));
+                alert("Product Added To Cart");
+            }
+            })
+
+            let BuyBtn = document.createElement("button");
+            BuyBtn.setAttribute("id","BuyBtn");
+            BuyBtn.innerText="Buy";
+
+            sizeData.append(Ssize,Msize,Xsize,XLsize,XXLsize);
+
             divImg.append(imgData);
-            divData.append(tilteData,priceData);
+            divData.append(tilteData,priceData,ratingData,labelData, sizeData,addToCart,BuyBtn);
 
             productContainer.append(divImg,divData);
         })
      }
+
+    function checkDuplicate(element){
+      for(let i=0; i<cartarr.length; i++){
+        if(cartarr[i].tilte==element.tilte){
+          return true;
+        }
+      }
+      return false;
+    }
 </script>

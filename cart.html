@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cart</title>
     <style>
-        /* FIXED SECTION FOR ALL OTHER PAGES */
-        #top{
+         /* FIXED SECTION FOR ALL OTHER PAGES */
+         #top{
             text-align: center;
             display: block;
             color: rgb(51, 51, 51);
@@ -119,210 +119,139 @@
         
        }
        /* END HERE */
-       .mission{
-        text-align: center;
-        background-color: rgb(210, 210, 210);
-        padding-top: 10px;
-        padding-bottom: 10px;
-       }
-       #background1{
-        /* height: 100px; */
-        /* border: 1px solid red; */
-        margin-top: 0%;
-        position: relative;
-        background-image: url(https://eddiebauer.scene7.com/is/image/EBContent/m_230222_hp_high-route_V2?$a8$);
-        /* background-position: center center; */
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100%;
-        height: 65vw;
+       .bagPage{
         display: flex;
+        justify-content: space-between;
        }
-       #background1 button{
-        width: 154px;
-        height: 40px;
-        margin-top: 750px;
-        margin-left: 90px;
-        padding: 4px 8px;
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(51, 51, 51);
+       #cartContainer{
+        width: 50%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content:space-between ;
+        margin-top: 50px;
        }
-       #background1 button:hover{
-        background-color: rgb(51, 51, 51);
+       #cartContainer:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         cursor: pointer;
-        color: white;
        }
-       /* END HERE */
-       .Spring{
-        text-align: center;
+       #cartContainer > div{
+        width: 45%;
+        /* border: 1px solid green; */
+        padding: 10px;
        }
-       .Spring p{
-        color: #333333;
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 23px;
-       }
-       .Spring1{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-       }
-       .Spring1 > div{
-        width: 30%;
-        text-align: center;
-    
-       }
-       .Spring1 > div img{
+       #cartContainer > div img{
         width: 100%;
        }
-       .Spring1 > div > div a{
-        /* display: flex; */
-        /* justify-content: space-between; */
-        font-size: 13px;
-        color: black;
-        font-weight: 700;
+       #cartContainer > div h3{
+        font-size: 25px;
        }
-       /* END HERE  */
-       .sell{
-        margin-top: 50px;
-        /* border: 1px solid red; */
-        width: 100%;
-       }
-       .sell1{
-        background-image: url(https://eddiebauer.scene7.com/is/image/EBContent/m_230222_hp_sale_V1?$a8$);
-        width: 70%;
-        height: 20vw;
-        margin: auto;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-        position: relative;
-       }
-       .sell2{
-        /* border: 1px solid red; */
-        width: 60%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-       }
-       .sell2 button{
-        width: 154px;
-        height: 40px;
-        /* margin-top: 750px; */
-        /* margin-left: 90px; */
-        padding: 4px 8px;
-        border: 1px solid rgb(51, 51, 51);
-        background-color: rgb(51, 51, 51);
-        color: white;
-       }
-       .sell2 button:hover{
-        background-color: rgb(255, 255, 255);
-        color: #333333;
-       }
-       /* END HERE  */
-       .bar{
-        margin-top: 50px;
-        width: 100%;
-        background-color: #cde2dd;
-        color: #333333;
-        font-weight: 700;
-        letter-spacing: .2px;
-        line-height: normal;
-        text-align: center;
-        padding-bottom: 10px;
-        padding-top: 11px;
-        font-size: 18px;
-       }
-       .bar a{
-        color: #333333;
-       }
-       /* END HERE  */
-       .store{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 40px;
-       }
-       .store > div{
-        width: 30%;
-        text-align: center;
-       }
-       .store > div img{
-        width: 100%;
-       }
-       .store > div a{
-        color: black;
-       }
-       /* END HERE  */
-       .shop{
-        background-color: rgb(237, 237, 237);
-        display: flex;
-        /* margin: auto; */
-        justify-content: center;
-        /* margin-right: 20px; */
-       }
-       .shop button{
-        width: 80px;
-        height: 25px;
-        margin-top: 20px;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(247, 128, 187);
+       #cartContainer > div p{
         font-size: 20px;
        }
-       .shop a{
-        margin-top: 25px;
+       #cartContainer > div label{
+        font-size: 18px
+       }
+       #increaseBtn{
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 3px;
+       }
+       #decreaseBtn{
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 3px;
+       }
+       #RemoveDiv{
+        /* border: 1px solid red; */
+        margin: 40px;
+        /* width: 30%; */
+       }
+       #RemoveDiv button{
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        width: 200px; 
+        border: 1px solid black;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        padding: 10px;
+       }
+       #RemoveDiv button:hover{
+        cursor: pointer;
+        background-color: white;
         color: black;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
        }
-       .shop span {
-        font-size: 15px;
-        /* font-style: none; */
-       }
-       /* END HERE  */
-       .Best-Sellers{
-        text-align: center;
-       }
-       .Best-Sellers1{
-        width: 90%;
+       #bagSummary{
+        margin-top: 50px;
+        /* border: 1px solid red; */
+        width: 50%;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
+      
        }
-       .Best-Sellers1 > div{
-        width: 19%;
-        text-align: center;
-       }
-       .Best-Sellers1 img{
-        width: 100%;
-       }
-       .Best-Sellers1 p{
-        color: #666;
-        text-align: left;
-       }
-       /* END HERE  */
-       .Trending-Products{
-        text-align: center;
-       }
-       .Trending-Products1{
-        width: 90%;
+       #mainData{
+        /* border: 1px solid green; */
+        width: 60%;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
+        padding: 30px;
+        background-color: rgb(245, 245, 245);
        }
-       .Trending-Products1 > div{
-        width: 16%;
-        text-align: center;
+       #mainData h3{
+        font-size: 30px;
        }
-       .Trending-Products1 img{
+       #mainData h4{
+        font-size: 25px;
+       }
+       #mainData p{
+        font-size: 25px;
+       }
+       #checkBtn{
         width: 100%;
+        /* border: 1px solid red; */
        }
-       .Trending-Products1 p{
-        color: #666;
-        text-align: left;
+       #checkBtn button{
+        width: 100%;
+        padding: 10px;
+        font-size: 25px;
+        border: 1px solid black;
+        background-color: rgb(51, 51, 51);
+        color: white;
        }
-       /* END HERE  */
-       /* fiexed section of all other pages */
-       footer{
+       #checkBtn button:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+       }
+       #ApplyCode{
+        margin-top: 30px;
+        width: 100%;
+        /* font-size: 25px; */
+        /* border: 1px solid green; */
+       }
+       #ApplyCode input{
+        width: 70%;
+        padding: 10px;
+        font-size: 25px;
+       }
+       #ApplyCode button{
+        /* margin-left: 0%; */
+        width: 23%;
+        padding: 10px;
+        font-size: 25px;
+        border: 1px solid black;
+        background-color: rgb(51, 51, 51);
+        color: white;
+       }
+       #ApplyCode button:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+       }
+
+
+
+              /* fiexed section of all other pages */
+              footer{
         background-color: #d8d8d8;
         width: 100%;
        }
@@ -455,13 +384,12 @@
         margin: auto;
         justify-content: space-between;
        }
-     
        /* END HERE  */
     </style>
-    <script src="https://kit.fontawesome.com/0ef0ee972c.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/0ef0ee972c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- FIXED SECTION FOR ALL OTHER PAGES  -->
+     <!-- FIXED SECTION FOR ALL OTHER PAGES  -->
     <a href="#" id="top">Enable Accessibility</a>
     <div class="nav1">
         <div id="nav1-img-p">
@@ -477,7 +405,6 @@
             <i class="fa-solid fa-user"></i>
             
             <a href="sign In.html" >Sign In / Sign Up</a>
-            <!-- onclick="window.location.href='sign In.html'" -->
         </div>
     </div>
     <div class="nav2">
@@ -536,167 +463,33 @@
         </div>
     </div>
     <!-- END HERE  -->
-    <div>
-        <div class="mission">
-            <h1>We’re on a mission to inspire, enable & empower everyone to experience the outdoors <br> & live their adventure.</h1>
-        </div>
-        <div id="background1">
-            <button onclick="window.location.href='Women1.html'">SHOP WOMEN</button>
-            <button style="margin-left: 30px;" onclick="window.location.href='Men.html'">SHOP MEN</button>
-        </div>
-    </div>
-    <!-- END HERE -->
-    <div>
-        <div class="Spring">
-            <h1>Spring Adventures Are Calling!</h1>
-            <p>Outfit yourself with tech-enhanced essentials built for superior <br>performance in unpredictable conditions.</p>
-        </div>
-        <div class="Spring1">
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EBContent/230222_hp_bottoms_V2?$a8$" alt="Error">
-                <h3>The most versatile pants & shorts</h3>
-                <div>
-                    <a href="#">WOMEN’S BOTTOMS </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">MEN’S BOTTOMS</a>
-                </div>
+    <div id="bagSummary">
+        <div id="mainData">
+            <h3>Bag Summary</h3>
+            <p>Merchandise :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cart-total">0</span></p>
+            <p>Shipping :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>free</span></p>
+            <p>Estimated Tax :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>--</span></p>
+            <hr>
+            <h4>Subtotal :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cart-total">0</span></h4>
+            <div id="checkBtn">
+                <button>BUY</button>
             </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EBContent/230222_hp_tops_V2?$a8$" alt="Error">
-                <h3>The season's best shirts & tees</h3>
-                <div>
-                    <a href="#">WOMEN’S TOPS </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">MEN’S TOPS</a>
-                </div>
+            <div id="ApplyCode">
+                <input type="text" placeholder="Cupon:- Masai30">
+                <button >Apply</button>
             </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EBContent/230222_hp_rain_V2?$a8$" alt="Error">
-                <h3>Don't let the weather keep you inside</h3>
-                <div>
-                    <a href="#">WOMEN’S RAIN </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">MEN’S RAIN</a>
-                </div>    
-            </div>
-        </div>
-    </div>    
-    <!-- END HERE -->
-    <div class="sell">
-        <div class="sell1"></div>
-        <div class="sell2">
-            <button>SHOP WOMEN</button>
-            <button>SHOP MEN</button>
-            <button>SHOP KIDS</button>
-            <button>SHOP HOME</button>
+
         </div>
     </div>
-    <!-- END HERE -->
-    <div class="bar">
-        <h2>BUY ONLINE, PICK UP IN-STORE</h2>
-        <a href="#">LEARN MORE</a>
+
+    <!-- append data -->
+    <div class="bagPage">
+        <div id="cartContainer">
+
+        </div>
+       
     </div>
-    <!-- END HERE -->
-    <div class="store">
-        <div>
-            <img src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_flyline_V1?$jpg12$&scl=1" alt="error">
-            <h3>BC Flyline Adaptive Ski Kit</h3>
-            <p>Released in early 2022, Eddie Bauer’s BC Flyline Kit is  the industry’s first commercially available outerwear designed for mono- and bi-skiers. This innovative design, built with Eddie Bauer skier Trevor Kennison, won “Product of the Year” at the  fourth annual Outdoor Retailer’s Innovation Awards</p>
-            <a href="#">LEARN MORE</a>
-        </div>
-        <div>
-            <img src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_high-fives_V1?$jpg12$&scl=1" alt="error">
-            <h3>High Fives Foundation</h3>
-            <p>Founded by Roy Tuscany in 2009, The High Fives Foundation is a non-profit organization that serves athletes living with life-altering injuries, such as spinal cord or traumatic brain injury</p>
-            <a href="#">LEARN MORE</a>
-        </div>
-        <div>
-            <img src="https://eddiebauer.scene7.com/is/image/EBContent/221227_hp_mrkt3box_TT_V1?$jpg12$&scl=1" alt="error">
-            <h3>Abundance Abounds!</h3>
-            <p> show you a few of the Eddie Bauer products @redleafranch loves to wears while working in his Tennessee vegetable garden, where his current harvest is almost beyond be-leaf. </p>
-            <a href="#">Follow Us On TikTok</a>
-        </div>
-    </div>
-    <!-- END HERE -->
-    <div class="shop">
-        <h2>Shop now. Pay later <span>with</span></h2>
-        &nbsp;&nbsp;
-        <button>Klarna </button>
-        &nbsp;&nbsp;
-        <a href="#">Learn More ></a> 
-    </div>
-    <!-- END HERE -->
-    <div>
-        <div class="Best-Sellers">
-            <h1>Best Sellers</h1>
-        </div>
-        <div class="Best-Sellers1">
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$" alt="error">
-                <h3>Women's Favorite Long-Sleeve Crewneck T-Shirt</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$" alt="error">
-                <h3>Women's Favorite Long-Sleeve Crewneck T-Shirt</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0332534_325C1?$328V1$" alt="error">
-                <h3>Men's Legend Wash 100% Cotton Short-Sleeve Classic T-Shirt</h3>
-                <p>$35.00-$40.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="error">
-                <h3>Women's Sightscape Convertible Roll-Up Pants</h3>
-                <p>$50.00-$60.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097327_443C1?$328V1$" alt="error">
-                <h3>Women's Favorite Short-Sleeve V-Neck T-Shirt</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-        </div>
-    </div>
-    <!-- END HERE  -->
-    <div>
-        <div class="Trending-Products">
-            <h1>Trending Products</h1>
-        </div>
-        <div class="Trending-Products1">
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0890622_100C1?$328V1$" alt="error">
-                <h3>Women's MotionLoft Hybrid Down Vest</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0313654_443C1?$328V1$" alt="error">
-                <h3>Women's Resolution Short-Sleeve T-Shirt</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0314075_344C1?$328V1$" alt="error">
-                <h3>Resolution Long-Sleeve 1/4-Zip</h3>
-                <p>$35.00-$40.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0220853_842C1?$328V1$" alt="error">
-                <h3>Packable Pet Rain Jacket</h3>
-                <p>$50.00-$60.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0081102_588C1?$328V1$" alt="error">
-                <h3>Women's Campfire Bonding Flannel Jacket</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-            <div>
-                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0093888_149C1?$328V1$" alt="error">
-                <h3>Women's Favorite Long-Sleeve Relaxed Mock Neck T-Shirt</h3>
-                <p>$28.00-$31.00</p>
-            </div>
-        </div>
-    </div>
-    <!-- END HERE -->
+
     <!-- fiexed section of all other pages -->
     <footer>
         <div>
@@ -847,7 +640,7 @@
                     <h4>BE THE FIRST TO KNOW</h4>
                     <p>Earn rewards and be the first to hear about sales and special offers.</p>
                     <div>
-                        <button onclick="window.location.href='sign In.html'">SIGN UP</button>
+                        <button>SIGN UP</button>
                     </div>
                     <div style="font-size: 25px; padding-top: 20px;">
                         <i class="fa-brands fa-facebook"></i>
@@ -877,5 +670,99 @@
     </footer>
 </body>
 </html>
+<script>
+     let cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
+    displayData(cartarr);
 
+    function displayData(data){
+        let cartContainer = document.querySelector("#cartContainer");
+        cartContainer.innerHTML="";
+
+        data.forEach((element)=>{
+            let divImg = document.createElement("div");
+            let divData = document.createElement("div");
+
+            let imgData = document.createElement("img");
+            imgData.setAttribute("src",element.image_url);
+
+            let tilteData = document.createElement("h3");
+            tilteData.innerText=element.tilte;
+
+            let priceData = document.createElement("p")
+            priceData.innerText=`$${element.price}`;
+
+            let ratingData = document.createElement("p")
+            ratingData.innerText="Rating"+":"+"4.4"
+
+            let labelEle = document.createElement("label");
+            labelEle.innerText="Qty :"
+
+            let quantityEle = document.createElement("span");
+            quantityEle.innerText=element.quantity;
+
+            let increaseEle = document.createElement("button");
+            increaseEle.innerText="+";
+            increaseEle.setAttribute("id","increaseBtn")
+            increaseEle.addEventListener("click",()=>{
+                element = element.quantity++;
+                localStorage.setItem("BagListObj",JSON.stringify(cartarr));
+                displayData(cartarr);
+            });
+            let decreaseEle = document.createElement("button");
+            decreaseEle.innerText="-";
+            decreaseEle.setAttribute("id","decreaseBtn")
+            decreaseEle.addEventListener("click",()=>{
+                if(element.quantity>1){
+                    element = element.quantity--;
+                    localStorage.setItem("BagListObj",JSON.stringify(cartarr));
+                    displayData(cartarr);
+            }
+            });
+
+            let RemoveDiv = document.createElement("div");
+            RemoveDiv.setAttribute("id","RemoveDiv");
+
+            let removeEle = document.createElement("button");
+            removeEle.innerText="Remove";
+            removeEle.addEventListener("click",()=>{
+                cartarr = cartarr.filter(function(ele){
+                    return ele.id !== element.id;
+                    })
+                    localStorage.setItem("BagListObj",JSON.stringify(cartarr));
+                    displayData(cartarr);
+            });
+
+            let totalEle = document.getElementById("cart-total");
+            let sum = 0;
+            for(let i=0; i<cartarr.length; i++){
+                sum+= cartarr[i].price*cartarr[i].quantity;
+            }
+            totalEle.innerText=`$${sum}`;
+
+            RemoveDiv.append(removeEle)
+            divImg.append(imgData);
+            divData.append(tilteData,priceData,ratingData,labelEle,increaseEle,quantityEle,decreaseEle,RemoveDiv);
+
+           cartContainer.append(divImg,divData);
+
+        })
+    }
+
+    let cuponEle = document.getElementById("ApplyCode");
+    let cuponBtn = cuponEle.getElementsByTagName("button")[0];
+    let cuponInp = cuponEle.getElementsByTagName("input")[0];
+
+    cuponBtn.addEventListener("click",function(ele){
+      let total =0;
+      for(let i=0; i<cartarr.length; i++){
+        total+=cartarr[i].price;
+      }
+      if("Masai30"==cuponInp.value){
+        total=Math.floor(total*0.7);
+      }
+    //   console.log(total);
+      document.getElementById("order-total").innerText=total;
+    })
+
+</script>
